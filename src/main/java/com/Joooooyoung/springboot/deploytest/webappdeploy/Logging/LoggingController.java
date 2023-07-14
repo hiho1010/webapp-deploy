@@ -12,6 +12,6 @@ public class LoggingController {
     @GetMapping("/")
     public String version() { return String.format("Project Version: %s", version); }
 
-    @GetMapping("health")
+    @GetMapping("/health")
     public String checkHealth() { return "health"; }
 }
